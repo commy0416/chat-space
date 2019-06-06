@@ -4,7 +4,7 @@
 |name     |string  |null: false,unique: true |
 
 ### Association
-- has_many :group through: members
+- has_many :groups through: members
 
 ## messages table
 |column|type|options|
