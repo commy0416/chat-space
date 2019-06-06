@@ -5,12 +5,16 @@
 
 ### Association
 - has_many :groups through: members
+- has_many :messages
+- has_many :members
 
 ## messages table
 |column|type|options|
 |------|----|-------|
-|body    |text   |null: false |
-|image   |string |null: false |
+|body    |text   |            |
+|image   |string |　　　　　　  |
+|user_id    |integer |null: false |
+|group_id   |integer |null: false |
 
 ### association
 - belongs_to :user
@@ -19,8 +23,7 @@
 ## groups table
 |column|type|options|
 |------|----|-------|
-|group_name|string |null: false |
-|group_id|integer |null: false |
+|name|string |null: false |
 
 ### association
 - has_many :members
