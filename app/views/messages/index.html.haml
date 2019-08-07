@@ -1,15 +1,86 @@
-.wrapper
-  .side-bar
-    .header
-      %h2
-        sample-group
-      %p
-        hello!
-      %h2
-        example
-      %p
-        まだメッセージがありません
-  .main
-
-    
-      
+.side-bar
+  .header
+    %h3.header__name
+      current %user
+    %ul.header__lists
+      %li.list
+        %a
+          = fa_icon 'pencil-square-o', class:'icon'
+      %li.list
+        %a
+          = fa_icon 'cog', class:'icon'
+  .groups
+    .group
+      .group__name
+        group name
+      .group__message
+        latest massage
+.chat
+  .header
+    .left-header
+      %h2.left-header__title
+        group name
+      .left-header__members
+        Member:
+        %ul.members__name
+          %li
+            test user
+    .right-header
+      %a
+        Edit
+  .messages
+    .upper-message
+      .upper-message__user-name
+        user name
+      .upper-message__date
+        2019/06/26(Wed) 16:15:54
+    .lower-message
+      %p.lower-message__content
+        message test message message
+  .form
+    %input
+    %i.fa.fa-image
+    %a
+      Send
+-# .wrapper
+-#   .side-bar
+-#     .side-header
+-#       %h2
+-#         sample-group
+-#       %ul
+-#         %li
+-#           E
+-#           -# = fa_icon ‘fa-edit’, class: ‘icon’
+-#         %li
+-#           C
+-#     .side-body
+-#       %h2
+-#         example
+-#       %p
+-#         まだメッセージがありません
+-# .main
+-#   .main-header
+-#     .chat-name
+-#       %h2
+-#         chat name
+-#       %ul
+-#         %li
+-#         Member:
+-#         %li
+-#           user_name
+-#     .chat-edit
+-#       %h2
+-#         edit
+-#   .main-body
+-#     %h2
+-#       .user_name
+-#         %p 
+-#           member1
+-#         %p 
+-#           2019/06/26(Wed) 16:15:54
+-#         %p
+-#           nyaaaaaaaaaaaaaaa
+-#   .main-footer
+-#     %input
+-#     .send
+-#       send
