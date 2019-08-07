@@ -1,0 +1,42 @@
+.side-bar
+  .header
+    %h3.header__name
+      current %user
+    %ul.header__lists
+      %li.list
+        = link_to '#' do
+          = fa_icon 'pencil-square-o', class:'icon'
+      %li.list
+        = link_to '#' do
+          = fa_icon 'cog', class:'icon'
+  .groups
+    .group
+      .group__name
+        group name
+      .group__message
+        latest massage
+.chat
+  .header
+    .left-header
+      %h2.left-header__title
+        group name
+      .left-header__members
+        Member:
+        %ul.members__name
+          %li
+            test user
+    .right-header
+      = link_to 'Edit','#'
+  .messages
+    .upper-message
+      .upper-message__user-name
+        user name
+      .upper-message__date
+        2019/06/26(Wed) 16:15:54
+    .lower-message
+      %p.lower-message__content
+        message test message message
+  .form
+    %input
+    %i.fa.fa-image
+    = link_to 'Send','#'
